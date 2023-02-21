@@ -1,0 +1,85 @@
+{C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult8_to_1_32.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult8_to_1_32.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module mult8_to_1_32
+
+Top level modules:
+	mult8_to_1_32
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/adder.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v} {1 {vlog -work work -stats=none {C:\Users\baris\Desktop\Comporg Proje Hakiki Son\processor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module processor
+
+Top level modules:
+	processor
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_5.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_5.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module mult2_to_1_5
+
+Top level modules:
+	mult2_to_1_5
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/signext.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/signext.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module signext
+
+Top level modules:
+	signext
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alucont.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alucont.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module alucont
+
+Top level modules:
+	alucont
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/shift.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/shift.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module shift
+
+Top level modules:
+	shift
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alu32.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alu32.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module alu32
+
+Top level modules:
+	alu32
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/control.v} {1 {vlog -work work -stats=none {C:\Users\baris\Desktop\Comporg Proje Hakiki Son\control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_32.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_32.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module mult2_to_1_32
+
+Top level modules:
+	mult2_to_1_32
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/flipflop.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/flipflop.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module flipflop
+
+Top level modules:
+	flipflop
+
+} {} {}} {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/new_component.v} {1 {vlog -work work -stats=none {C:/Users/baris/Desktop/Comporg Proje Hakiki Son/new_component.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module new_component
+
+Top level modules:
+	new_component
+
+} {} {}}

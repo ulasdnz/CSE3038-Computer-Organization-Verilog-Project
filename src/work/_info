@@ -1,0 +1,275 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/baris/Desktop/Son Comporg Proje
+vadder
+Z0 !s110 1654356362
+!i10b 1
+!s100 gWb<;Y:[8c^V3JALeYLDZ1
+IVz5@68g@oJPHYglHT45C50
+Z1 dC:/Users/baris/Desktop/Comporg Proje Hakiki Son
+w1654283227
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/adder.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/adder.v
+!i122 15
+Z2 L0 1 5
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OV;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1654356362.000000
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/adder.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+valu32
+Z8 !s110 1654356363
+!i10b 1
+!s100 6LQP]mXV@]]4ciCWPVn:^3
+I`_FT>^WnC=P?I^]NXmnDQ1
+R1
+w1654330592
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alu32.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/alu32.v
+!i122 16
+L0 1 26
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1654356363.000000
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alu32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alu32.v|
+!i113 1
+R6
+R7
+valucont
+R8
+!i10b 1
+!s100 7Nk2j:Nl<3X3O`S=LcDd42
+IEid1@C2znZQ[CV5S;UAbT3
+R1
+w1654330213
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alucont.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/alucont.v
+!i122 17
+L0 1 20
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alucont.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/alucont.v|
+!i113 1
+R6
+R7
+vcontrol
+!s110 1654356463
+!i10b 1
+!s100 diK5:CWKijlRk8JKI^T?81
+IcY@Hj[7oaj[d>hF5C9^7A1
+R1
+w1654356459
+8C:\Users\baris\Desktop\Comporg Proje Hakiki Son\control.v
+FC:\Users\baris\Desktop\Comporg Proje Hakiki Son\control.v
+!i122 23
+L0 1 29
+R3
+R4
+r1
+!s85 0
+31
+!s108 1654356463.000000
+!s107 C:\Users\baris\Desktop\Comporg Proje Hakiki Son\control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\baris\Desktop\Comporg Proje Hakiki Son\control.v|
+!i113 1
+R6
+R7
+vflipflop
+R0
+!i10b 1
+!s100 64gdK@BD4bG87fjJUGU1<3
+I:h[6PU5:o1@`HaNk>>lGW0
+R1
+w1654300312
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/flipflop.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/flipflop.v
+!i122 12
+L0 1 7
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/flipflop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/flipflop.v|
+!i113 1
+R6
+R7
+vmult2_to_1_32
+R8
+!i10b 1
+!s100 Y_Id<LIRQ3DbCYAcIf6lb3
+I8JTYkVKDN6O]P?e=FmDN30
+R1
+Z10 w1654283228
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_32.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_32.v
+!i122 19
+Z11 L0 1 6
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_32.v|
+!i113 1
+R6
+R7
+vmult2_to_1_5
+R8
+!i10b 1
+!s100 QeR<>khHHW047@W2MP@;I2
+IRONF[5fnfVWgf0E:7ZBh43
+R1
+R10
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_5.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_5.v
+!i122 18
+R11
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult2_to_1_5.v|
+!i113 1
+R6
+R7
+vmult8_to_1_32
+R0
+!i10b 1
+!s100 _kC2@C3XV1eXa2OFJ7Rg`0
+Ind@Zz<m]MabXHVozoY_TM1
+R1
+w1654293321
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult8_to_1_32.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult8_to_1_32.v
+!i122 13
+L0 1 12
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult8_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/mult8_to_1_32.v|
+!i113 1
+R6
+R7
+vnew_component
+R0
+!i10b 1
+!s100 MG19R>]@R5<C?57@4ch4>1
+IZe[UFSo9nU7@k[[d`WH5f1
+R1
+w1654301698
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/new_component.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/new_component.v
+!i122 14
+R11
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/new_component.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/new_component.v|
+!i113 1
+R6
+R7
+vprocessor
+R8
+!i10b 1
+!s100 G>JS:SDA=2O2D44WM<?`O1
+IEnc3_Tol3ARoH<8JWM_4J1
+R1
+w1654356353
+8C:\Users\baris\Desktop\Comporg Proje Hakiki Son\processor.v
+FC:\Users\baris\Desktop\Comporg Proje Hakiki Son\processor.v
+!i122 20
+L0 1 232
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:\Users\baris\Desktop\Comporg Proje Hakiki Son\processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\baris\Desktop\Comporg Proje Hakiki Son\processor.v|
+!i113 1
+R6
+R7
+vshift
+Z12 !s110 1654356364
+!i10b 1
+!s100 XX2;Z1lf9Dd@dcO[G5lL:2
+I46b_9YKl[ga]o`XkdPjK@0
+R1
+R10
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/shift.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/shift.v
+!i122 21
+R2
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/shift.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/shift.v|
+!i113 1
+R6
+R7
+vsignext
+R12
+!i10b 1
+!s100 aj?PFk=ka=A4[;Kz]?d6F3
+I[_F;z@lYPLUFW4PAzWNVC1
+R1
+R10
+8C:/Users/baris/Desktop/Comporg Proje Hakiki Son/signext.v
+FC:/Users/baris/Desktop/Comporg Proje Hakiki Son/signext.v
+!i122 22
+R2
+R3
+R4
+r1
+!s85 0
+31
+!s108 1654356364.000000
+!s107 C:/Users/baris/Desktop/Comporg Proje Hakiki Son/signext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/baris/Desktop/Comporg Proje Hakiki Son/signext.v|
+!i113 1
+R6
+R7

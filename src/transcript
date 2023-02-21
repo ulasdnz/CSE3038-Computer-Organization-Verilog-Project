@@ -1,0 +1,1197 @@
+vsim -gui work.processor
+# vsim -gui work.processor 
+# Start time: 16:09:30 on Jun 04,2022
+# Loading work.processor
+# Loading work.mult2_to_1_5
+# Loading work.mult2_to_1_32
+# Loading work.mult8_to_1_32
+# Loading work.flipflop
+# Loading work.new_component
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.signext
+# Loading work.alucont
+# Loading work.shift
+add wave -position insertpoint  \
+sim:/processor/pc \
+sim:/processor/clk \
+sim:/processor/datmem \
+sim:/processor/mem \
+sim:/processor/dataa \
+sim:/processor/datab \
+sim:/processor/out2 \
+sim:/processor/out3 \
+sim:/processor/out4 \
+sim:/processor/sum \
+sim:/processor/extad \
+sim:/processor/adder1out \
+sim:/processor/adder2out \
+sim:/processor/sextad \
+sim:/processor/writeData \
+sim:/processor/outPc \
+sim:/processor/output5 \
+sim:/processor/output7 \
+sim:/processor/output15 \
+sim:/processor/inst31_26 \
+sim:/processor/inst25_21 \
+sim:/processor/inst20_16 \
+sim:/processor/inst15_11 \
+sim:/processor/out1 \
+sim:/processor/out31 \
+sim:/processor/inst15_0 \
+sim:/processor/instruc \
+sim:/processor/dpack \
+sim:/processor/gout \
+sim:/processor/zout \
+sim:/processor/nout \
+sim:/processor/pcsrc \
+sim:/processor/regdest \
+sim:/processor/alusrc \
+sim:/processor/memtoreg \
+sim:/processor/regwrite \
+sim:/processor/memread \
+sim:/processor/memwrite \
+sim:/processor/branch \
+sim:/processor/aluop1 \
+sim:/processor/aluop0 \
+sim:/processor/zSignal \
+sim:/processor/nSignal \
+sim:/processor/mux3signal2 \
+sim:/processor/mux3signal1 \
+sim:/processor/mux3signal0 \
+sim:/processor/signal31 \
+sim:/processor/linkaddressignal \
+sim:/processor/signal29 \
+sim:/processor/pc4signal \
+sim:/processor/addresmemorysignal \
+sim:/processor/registerfile \
+sim:/processor/jmor \
+sim:/processor/jspal \
+sim:/processor/nSignal_q \
+sim:/processor/zSignal_q \
+sim:/processor/i \
+sim:/processor/my_int
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 08  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 00  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 22  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 18  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 04  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 62  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 64  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 00  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 04  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= a0  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000007   INST 60430008   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 05000000  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 05000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 05000008  SUM 00000007   INST 60430008   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 05000000  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC 05000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC 05000008  SUM 00000007   INST 60430008   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 00  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 22  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 18  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 04  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 62  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 64  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 00  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 04  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= a0  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM ffffffff   INST 00221804   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000014  SUM ffffffff   INST 00621020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 64000004   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 62  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 64  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 00  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 04  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= a0  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  120PC 00000014  SUM 0000000b   INST 00621020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  140PC 00000014  SUM 00000017   INST 00621020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 64000004   REGISTER 00000014 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 62  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 10  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 20  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 64  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 00  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 0000000b   INST 00621020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  180PC 00000018  SUM 00000017   INST 00621020   REGISTER 00000014 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 0000001c
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 62  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 10  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 20  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 64  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 00  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 0000001c 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 0000001c 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 0000001c 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  160PC 00000018  SUM 0000000b   INST 00621020   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  180PC 00000018  SUM 00000017   INST 00621020   REGISTER 00000014 0000001c 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 0000001c
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 62  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 10  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 0000001c 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 0000001c 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 0000001c 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 0000001c 00000023 ffffffff 
+run
+#                  200PC 0000001c  SUM 0000000b   INST 00621020   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  220PC 0000001c  SUM 00000017   INST 00621020   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  240PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 0000001c 00000023 ffffffff 
+#                  280PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 0000001c 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 62  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 10  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  200PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  240PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  280PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000014 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 00  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  200PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  240PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  280PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  320PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  360PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+# ** Note: $finish    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(218)
+#    Time: 400 ps  Iteration: 0  Instance: /processor
+# 1
+# Break in Module processor at C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v line 218
+run
+#                  400PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  440PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  480PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  520PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  560PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  600PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  640PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  680PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  720PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  760PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  800PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  840PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  880PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  920PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  960PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 00  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  200PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  240PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  280PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  320PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  360PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+# ** Note: $finish    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(218)
+#    Time: 400 ps  Iteration: 0  Instance: /processor
+# 1
+# Break in Module processor at C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v line 218
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= ff  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= ff  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= ff  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  100PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000014 00000020 00000023 ffffffff 
+run
+#                  200PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  240PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000014 00000020 00000023 ffffffff 
+#                  280PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000014 00000020 00000023 ffffffff 
+# Compile of flipflop.v was successful.
+# Compile of mult8_to_1_32.v was successful.
+# Compile of new_component.v was successful.
+# Compile of adder.v was successful.
+# Compile of alu32.v was successful.
+# Compile of alucont.v was successful.
+# Compile of control.v failed with 3 errors.
+# Compile of mult2_to_1_5.v was successful.
+# Compile of mult2_to_1_32.v was successful.
+# Compile of processor.v was successful.
+# Compile of shift.v was successful.
+# Compile of signext.v was successful.
+# 12 compiles, 1 failed with 3 errors.
+# ** Error: Acs sdne.
+# E
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# Compile of control.v was successful.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# E
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.processor
+# Loading work.mult2_to_1_5
+# Loading work.mult2_to_1_32
+# Loading work.mult8_to_1_32
+# Loading work.flipflop
+# Loading work.new_component
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.signext
+# Loading work.alucont
+# Loading work.shift
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= ff  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= ff  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= ff  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= ff  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= ff  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= ff  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 0000000c  SUM 00000000   INST 4c000000   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000110  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 00000114  SUM 00000000   INST 00000020   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 01  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 10  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 20  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 01  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 10  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 20  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 64  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 02  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 00  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 01  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 10  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 20  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM 00000000   INST 64000002   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000014  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 02  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 01  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000002   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000008  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 03  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 01  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000003   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 00000010  SUM 00000000   INST 64000003   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 06  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 01  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000006   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000018  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 04  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 01  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 10  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000004   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  160PC 00000014  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000005
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 04  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 01  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 07  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 48  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 04  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 01  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 10  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 20  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000004   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  160PC 00000014  SUM 00000001   INST 01074804   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 00000018  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC 0000001c  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000008
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 04  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 01  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 07  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 48  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 04  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 01  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 10  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 20  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000004   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  160PC 00000014  SUM 00000000   INST 01074804   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 00000018  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC 0000001c  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000008
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 00   Register[18]= 00000000
+# Instruction Memory[19]= 04  Data Memory[19]= 20   Register[19]= 00000000
+# Instruction Memory[20]= 01  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 07  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 48  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 04  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 4c  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 00  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 00  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 00  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 01  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 10  Data Memory[30]= xx   Register[30]= 00000005
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000004   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  160PC 00000014  SUM 00000000   INST 01074804   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 00000018  SUM 00000000   INST 4c000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC 00000024  SUM fffffffe   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000008
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 00   Register[18]= 00000000
+# Instruction Memory[19]= 06  Data Memory[19]= 20   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 00  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 01  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 07  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 48  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 04  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= 4c  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= 00  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= 00000005
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000006   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000018  SUM 00000000   INST 01074804   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 0000001c  SUM 00000000   INST 4c000000   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC 00000024  SUM fffffffe   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC xxxx0000  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000009
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 22  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 00  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 3f  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 00  Data Memory[8]= 00   Register[8]= 00000008
+# Instruction Memory[9]= 00  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 00  Data Memory[11]= 0c   Register[11]= 00000030
+# Instruction Memory[12]= 00  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 01  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 10  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 20  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 64  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 00  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 00   Register[18]= 00000000
+# Instruction Memory[19]= 06  Data Memory[19]= 24   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 00  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 01  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= 07  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 48  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 04  Data Memory[27]= 24   Register[27]= 00000022
+# Instruction Memory[28]= 4c  Data Memory[28]= xx   Register[28]= 00000035
+# Instruction Memory[29]= 00  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= 00  Data Memory[30]= xx   Register[30]= 00000005
+#                    0PC 00000004  SUM 00000008   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 0000000c  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 00000000   INST 64000006   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000018  SUM 00000000   INST 01074804   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 0000001c  SUM 00000000   INST 4c000000   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 00000024  SUM fffffffe   INST 0022003f   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC xxxx0000  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000023 00000020 00000023 ffffffff 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 34 of file "initIM.dat". (Current address [32], address range [0:31])    : C:/Users/baris/Desktop/Comporg Proje Hakiki Son/processor.v(207)
+#    Time: 0 ps  Iteration: 0  Instance: /processor
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= 00   Register[1]= ffffffff
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000003
+# Instruction Memory[3]= 00  Data Memory[3]= 10   Register[3]= 00000000
+# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000023
+# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000020
+# Instruction Memory[6]= 10  Data Memory[6]= 00   Register[6]= 00000023
+# Instruction Memory[7]= 20  Data Memory[7]= 05   Register[7]= 00000023
+# Instruction Memory[8]= 60  Data Memory[8]= 00   Register[8]= 00000040
+# Instruction Memory[9]= 43  Data Memory[9]= 00   Register[9]= 00000060
+# Instruction Memory[10]= 00  Data Memory[10]= 00   Register[10]= 00000010
+# Instruction Memory[11]= 09  Data Memory[11]= 10   Register[11]= 00000030
+# Instruction Memory[12]= 4c  Data Memory[12]= 00   Register[12]= 00000032
+# Instruction Memory[13]= 00  Data Memory[13]= 00   Register[13]= 00000042
+# Instruction Memory[14]= 00  Data Memory[14]= 01   Register[14]= 00000014
+# Instruction Memory[15]= 00  Data Memory[15]= 00   Register[15]= 00000028
+# Instruction Memory[16]= 60  Data Memory[16]= 00   Register[16]= 00000000
+# Instruction Memory[17]= 44  Data Memory[17]= 00   Register[17]= 00000000
+# Instruction Memory[18]= 00  Data Memory[18]= 01   Register[18]= 00000000
+# Instruction Memory[19]= 0d  Data Memory[19]= 10   Register[19]= 00000000
+# Instruction Memory[20]= 00  Data Memory[20]= 00   Register[20]= 00000000
+# Instruction Memory[21]= 00  Data Memory[21]= 00   Register[21]= 00000000
+# Instruction Memory[22]= 00  Data Memory[22]= 00   Register[22]= 00000000
+# Instruction Memory[23]= 20  Data Memory[23]= 25   Register[23]= 00000000
+# Instruction Memory[24]= 00  Data Memory[24]= 00   Register[24]= 00000000
+# Instruction Memory[25]= a0  Data Memory[25]= 00   Register[25]= 00000000
+# Instruction Memory[26]= 00  Data Memory[26]= 01   Register[26]= 00000000
+# Instruction Memory[27]= 14  Data Memory[27]= 24   Register[27]= 00000010
+# Instruction Memory[28]= ff  Data Memory[28]= xx   Register[28]= 00000010
+# Instruction Memory[29]= ff  Data Memory[29]= xx   Register[29]= 00000010
+# Instruction Memory[30]= ff  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   40PC 00000008  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+#                   80PC 00000010  SUM 0000000c   INST 6044000d   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  120PC 00000014  SUM 00000000   INST 00000020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  160PC 00000018  SUM 00000000   INST 00a00014   REGISTER 00000023 00000020 00000023 ffffffff 
+run
+#                  200PC 00000020  SUM 00000000   INST 00000000   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  240PC 00000024  SUM ffffffff   INST 00011020   REGISTER 00000023 00000020 00000023 ffffffff 
+#                  280PC 00000028  SUM 00000008   INST 60430009   REGISTER 00000023 00000020 00000023 ffffffff 
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/baris/Desktop/Comporg Proje Hakiki Son/Comporg_Project_2.mpf).  File can not be renamed.
+# End time: 20:42:52 on Jun 04,2022, Elapsed time: 4:33:22
+# Errors: 3, Warnings: 2
